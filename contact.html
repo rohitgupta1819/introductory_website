@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg">
+    <title>PeopleBetter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="con-sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="mission.html">SERVICES</a></li>
+                    <li><a href="knowledge.html">Resources</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1></h1>
+
+    </section>
+
+
+    <!-- Contact us -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7481.5632390431565!2d85.80589931448772!3d20.350638338757385!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1667561506773!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>5-57, SwitchTech Incubator Foundation, Silicon Institute of Technology <br>South Block, Silicon Hills, Patia</h5>
+                        <p>Bhubaneswar, Odisha, IN</p>
+                    </span>
+                </div>
+                <!-- <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 9777451500</h5>
+                        <p>Monday to Saturday, 9Am to 5PM</p>
+                    </span>
+                </div> -->
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>office@peoplebetter.in</h5>
+                        <p>Email us your Queries</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Enter your message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn" >Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="https://www.facebook.com/profile.php?id=100087143873862">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li><a href="https://twitter.com/_peoplebetter_?t=FvrZzCx6rM3LabCxiKpu-g&s=08">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li><a href="https://www.linkedin.com/in/people-better-51a620255/">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li><a href="https://www.instagram.com/_.peoplebetter._/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mission.html">Services</a></li>
+            <li><a href="knowledge.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p><i class="fa fa-copyright"></i> 2022 PeopleBetter | All Rights Reserved</p>
+    </section>
+
+
+
+    <!-- Javascript for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
